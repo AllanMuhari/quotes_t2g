@@ -31,7 +31,7 @@ function App() {
         The Sage's Manuscript
       </h1>
       <div className="m-auto">
-        <div className="w-[25%] h-auto text-[1.5rem] leading-5 m-auto text-center">
+        <div className="w-[25%] flex items-center justify-center h-auto text-[1.5rem] leading-5 m-auto text-center">
           <h1 className="m-auto font-mono font-semibold mt-20">
             {loading ? (
               <Hourglass
