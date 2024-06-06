@@ -5,10 +5,10 @@ function App() {
   const [quote, setQuote] = useState(
     "It’s not a bug — it’s an undocumented feature."
   );
-  const [loading, setLoading] = useState(false); // State to manage loading status
+  const [loading, setLoading] = useState(false); 
 
   const getQuote = async () => {
-    setLoading(true); // Set loading to true before starting the fetch
+    setLoading(true);
     try {
       const response = await fetch("https://api.adviceslip.com/advice");
       const data = await response.json();
@@ -17,12 +17,12 @@ function App() {
       console.error("Error fetching advice:", err);
       setQuote("Failed to fetch advice. Please try again later.");
     } finally {
-      setLoading(false); // Set loading to false after fetch completes
+      setLoading(false); 
     }
   };
 
   useEffect(() => {
-    getQuote(); // Fetch a quote when the component mounts
+    getQuote();
   }, []);
 
   return (
