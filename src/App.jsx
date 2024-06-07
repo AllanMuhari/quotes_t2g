@@ -5,7 +5,7 @@ function App() {
   const [quote, setQuote] = useState(
     "It’s not a bug — it’s an undocumented feature."
   );
-  const [loading, setLoading] = useState(false); 
+  const [loading, setLoading] = useState(false);
 
   const getQuote = async () => {
     setLoading(true);
@@ -17,7 +17,7 @@ function App() {
       console.error("Error fetching advice:", err);
       setQuote("Failed to fetch advice. Please try again later.");
     } finally {
-      setLoading(false); 
+      setLoading(false);
     }
   };
 
